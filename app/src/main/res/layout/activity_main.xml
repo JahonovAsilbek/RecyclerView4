@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/movies"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#66D6EF"
+        android:gravity="center|start"
+        android:paddingLeft="30dp"
+        android:text="Movies"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:clickable="true"
+        android:id="@+id/plus_btn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_plus1"
+        app:layout_constraintBottom_toBottomOf="@id/movies"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="@id/movies"
+        app:layout_constraintRight_toRightOf="@id/movies"
+        app:layout_constraintTop_toTopOf="@id/movies" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movies" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
