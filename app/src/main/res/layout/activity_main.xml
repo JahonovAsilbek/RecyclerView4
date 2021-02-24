@@ -11,13 +11,13 @@
     <TextView
         android:id="@+id/movies"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="?actionBarSize"
         android:background="#66D6EF"
         android:gravity="center|start"
         android:paddingLeft="30dp"
         android:text="Movies"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="27sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
