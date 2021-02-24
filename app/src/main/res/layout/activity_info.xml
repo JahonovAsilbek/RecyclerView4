@@ -7,16 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
-    <TextView
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/info_title"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="?actionBarSize"
         android:background="#66D6EF"
         android:gravity="center|start"
-        android:paddingLeft="30dp"
-        android:text="Edit movie"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:paddingStart="30dp"
+        android:title="Edit movie"
+        app:titleTextColor="@android:color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

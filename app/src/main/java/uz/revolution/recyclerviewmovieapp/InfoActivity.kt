@@ -11,11 +11,11 @@ class InfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info)
+        setSupportActionBar(info_title)
 
         val bundle = intent.extras
         if (bundle != null) {
 
-            info_title.text = bundle.getString("name")
             info_name.text = "Movie name: "+bundle.getString("name")
             info_author.text = "Movie authors: "+bundle.getString("author")
             info_about.text = "About movie: "+bundle.getString("about")
