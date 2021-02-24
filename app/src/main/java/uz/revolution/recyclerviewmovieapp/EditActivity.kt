@@ -21,7 +21,7 @@ class EditActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit)
-        setSupportActionBar(add_movie_title)
+        setSupportActionBar(edit_movie_title)
 
         val database = AppDatabase.getData.getDatabase()
         myDao = database.getMyDao()
